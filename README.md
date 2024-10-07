@@ -63,4 +63,29 @@ ecommerce-api/ │ ├── ecommerce/          # Main project directory │   
 - **GET** `/api/orders/` - View the order history of the current user.
 - **GET** `/api/orders/{id}/` - Retrieve details of a specific order.
 
---- 
+---
+
+## Installation
+
+### Prerequisites
+
+- Python 3.x
+- Django 4.x
+- Django REST Framework
+- PostgreSQL
+
+### Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/yourusername/ecommerce-api.git
+   cd ecommerce-api
+
+2. Set up a virtual environment:
+
+python3 -m venv env
+source env/bin/activate  # For Windows, use `env\Scripts\activate`
+
+
+3. Install dependencies:
+ 
