@@ -116,4 +116,52 @@ python manage.py runserver
 
 
 ---
+
+Testing
+
+To run the tests, use the following command:
+
+python manage.py test
+
+This will run all unit tests and ensure that the API is functioning as expected.
+
+
+---
+
+Documentation
+
+API documentation is automatically generated using drf-yasg or drf-spectacular. You can access it via:
+
+Swagger UI: http://localhost:8000/swagger/
+
+ReDoc: http://localhost:8000/redoc/
+
+
+
+---
+
+Future Improvements
+
+Add support for product reviews and ratings.
+
+Implement payment gateway integration (e.g., PayPal, Stripe).
+
+Include an inventory management system for tracking stock levels.
+
+Implement product recommendations based on user behavior.
+
+
+
+---
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+---
+
+Authors
+
+Your Name - yourusername
  
