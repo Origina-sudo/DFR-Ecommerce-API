@@ -31,3 +31,36 @@ An eCommerce API built using Django and Django REST Framework (DRF) that allows 
 The project is structured as follows:
 
 ecommerce-api/ │ ├── ecommerce/          # Main project directory │   ├── settings.py     # Project settings │   ├── urls.py         # Global URL routing │   └── ... │ ├── products/           # Product app │   ├── models.py       # Product model │   ├── serializers.py  # Product serializers │   ├── views.py        # Product views (API endpoints) │   └── urls.py         # Product URL routing │ ├── carts/              # Cart app │   ├── models.py       # Cart model │   ├── serializers.py  # Cart serializers │   ├── views.py        # Cart views (API endpoints) │   └── urls.py         # Cart URL routing │ ├── orders/             # Order app │   ├── models.py       # Order model │   ├── serializers.py  # Order serializers │   ├── views.py        # Order views (API endpoints) │   └── urls.py         # Order URL routing │ └── users/              # User authentication and management app ├── models.py       # User model ├── serializers.py  # User serializers ├── views.py        # User views (API endpoints) └── urls.py         # User URL routing
+
+---
+
+## API Endpoints
+
+### **Authentication**
+
+- **POST** `/api/auth/register/` - Register a new user.
+- **POST** `/api/auth/login/` - User login and retrieve JWT token.
+- **POST** `/api/auth/logout/` - Log out the user and invalidate the token.
+- **GET** `/api/auth/user/` - Retrieve the currently authenticated user's details.
+
+### **Products**
+
+- **GET** `/api/products/` - List all products.
+- **GET** `/api/products/{id}/` - Retrieve details of a specific product.
+- **POST** `/api/products/` - Add a new product (Admin only).
+- **PUT** `/api/products/{id}/` - Update product details (Admin only).
+- **DELETE** `/api/products/{id}/` - Delete a product (Admin only).
+### **Cart**
+
+- **GET** `/api/cart/` - View items in the cart for the current user.
+- **POST** `/api/cart/` - Add an item to the cart.
+- **PUT** `/api/cart/{id}/` - Update item quantity in the cart.
+- **DELETE** `/api/cart/{id}/` - Remove an item from the cart.
+
+### **Orders**
+
+- **POST** `/api/orders/` - Create a new order (checkout).
+- **GET** `/api/orders/` - View the order history of the current user.
+- **GET** `/api/orders/{id}/` - Retrieve details of a specific order.
+
+--- 
