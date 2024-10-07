@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 4. Set up the database:
 
-Configure the DATABASES setting in ecommerce/settings.py to connect to your PostgreSQL or other relational database.
+Configure the DATABASES setting in ecommerce/settings.py to connect to your PostgreSQL.
 
 Run migrations to create the necessary database tables:
 
@@ -161,7 +161,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ---
 
-Authors
-
-Your Name - yourusername
+Author:Benjamin Arthur 
  
