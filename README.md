@@ -88,4 +88,32 @@ source env/bin/activate  # For Windows, use `env\Scripts\activate`
 
 
 3. Install dependencies:
+pip install -r requirements.txt
+
+4. Set up the database:
+
+Configure the DATABASES setting in ecommerce/settings.py to connect to your PostgreSQL or other relational database.
+
+Run migrations to create the necessary database tables:
+
+python manage.py migrate
+
+
+
+5. Create a superuser:
+
+python manage.py createsuperuser
+
+
+6. Run the development server:
+
+python manage.py runserver
+
+
+7. Access the API: Open your browser and navigate to http://localhost:8000/api/.
+
+
+
+
+---
  
