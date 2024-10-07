@@ -78,8 +78,8 @@ ecommerce-api/ │ ├── ecommerce/          # Main project directory │   
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/ecommerce-api.git
-   cd ecommerce-api
+   git clone https://github.com/Origina-sudo/DFR-Ecommerce-API.git
+   cd EcommerceAPI
 
 2. Set up a virtual environment:
 
