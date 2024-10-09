@@ -84,11 +84,10 @@ ecommerce-api/ │ ├── ecommerce/          # Main project directory │   
 2. Set up a virtual environment:
 
 python3 -m venv env
-source env/bin/activate  # For Windows, use `env\Scripts\activate`
 
 
 3. Install dependencies:
-pip install -r requirements.txt
+ pipenv install
 
 4. Set up the database:
 
